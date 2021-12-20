@@ -1,0 +1,55 @@
+{
+  "type": "directory",
+  "rights": {
+    "read": ["user1", "admin"],
+    "write": ["user1", "admin"],
+    "delete": ["admin"]
+  },
+  "files": {
+    "secure": {
+      "type": "directory",
+      "rights": {
+        "read": ["admin"],
+        "write": ["admin"],
+        "delete": ["admin"]
+      },
+      "files": {
+        "register": {
+          "type": "file",
+          "rights": {
+            "read": ["admin"],
+            "write": ["admin"],
+            "delete": ["admin"]
+          },
+          "content": "[{\"login\": \"admin\", \"password\": \"fives\"}, {\"login\": \"user1\", \"password\": \"12345\", \"time\": 1635412052066}, {\"login\": \"user2\", \"password\": \"12345\", \"time\": 1635412052066}, {\"login\": \"user3\", \"password\": \"12345\", \"time\": 1635412052066}]"
+
+        }
+      }
+    },
+
+
+    "B": {
+      "type": "directory",
+      "rights": {
+        "read": ["admin"],
+        "write": ["admin"],
+        "delete": ["admin"]
+      },
+      "files": {
+
+      }
+    },
+
+    "E": {
+      "type": "directory",
+      "rights": {
+        "read": ["admin"],
+        "write": ["admin"],
+        "delete": ["admin"]
+      },
+      "files": {
+
+      }
+    }
+  }
+}
